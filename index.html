@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ptbbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <title>JCAM</title>
+</head>
+<body>
+
+   <div class="alert">
+        <i class="ph ph-desktop"></i>
+        <h1>Versão para desktop em breve!</h1>
+   </div>
+
+    <div class="modal-cams hidde">
+        <div class="close-modal">
+            <i class="ph ph-x button-close-modal"></i>
+        </div>
+        <div class="video-cam  hidde" id="cam-cozinha ">
+            <video src="./assets/cozinha.mp4"></video>
+        </div>
+        <div class="video-cam  hidde" id="cam-garagem">
+            <video src="./assets/garagem.mp4"></video>
+        </div>
+        <div class="video-cam  hidde" id="cam-quarto">
+            <video src="./assets/quarto.mp4"></video>
+        </div>
+        <div class="video-cam  hidde" id="cam-sala">
+            <video src="./assets/sala.mp4"></video>
+        </div>
+    </div>
+
+
+    <main>
+        <aside class="hidde">
+            
+            <div class="container-options">
+                <div class="option-aside cam-security">
+                    <i class="ph ph-security-camera"></i>
+                    <p>CÂMERAS</p>
+                </div>
+
+                <div class="option-aside help">
+                    <i class="ph ph-question"></i>
+                    <p>AJUDA</p>
+                </div>
+                
+                <div class="option-aside logout">
+                    <i class="ph ph-sign-out"></i>
+                    <p>DESCONECTAR</p>
+                </div>
+            </div>    
+
+            <div class="fotter-aside">
+                Todos direitos reservados Jcam &copy;
+            </div>
+        </aside>
+
+        <header>
+            <i class="ph ph-list button-menu"></i>
+            <div>
+            <p>JCAM</p>
+            <img src="./assets/logo.png" alt="">
+            </div>
+        </header>
+
+        <section id="cams">
+            
+            <h1>CÂMERAS</h1>
+
+            <div class="container-cams">
+                <div class="cam cam-sala">
+                    <i class="ph-light ph-television"></i>
+                    <h2>SALA</h2>
+                </div>
+
+                <div class="cam cam-cozinha">
+                    <i class="ph-light ph-oven"></i>
+                    <h2>COZINHA</h2>
+                </div>
+
+                <div class="cam cam-quarto">
+                    <i class="ph-light ph-bed"></i>
+                    <h2>QUARTO</h2>
+                </div>
+
+                <div class="cam cam-garagem">
+                    <i class="ph-light ph-car"></i>
+                    <h2>GARAGEM</h2>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="help" class="hidde">
+            <h1>Dúvidas - Reclamações - Feedbacks - Suporte</h1>
+            <form action="">
+                <textarea name="" id="answer" placeholder="Digite sua dúvida!"></textarea>
+                <button>Enviar</button>
+            </form>
+        </section>
+
+
+    </main>
+    
+    <footer>
+        <p>
+            Todos direitos reservados Jcam &copy;
+        </p>
+    </footer>
+
+
+    <script src="./src/jquery.js"></script>
+    <script preload src="./src/mains.js"></script>
+</body>
+</html>

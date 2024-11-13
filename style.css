@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: garyscale
+}
+
+:root {
+    font-size: 62.5%;
+
+
+    --primary-color: #9B4922;
+    --secondary-color: #D8A790;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.hidde {
+    display: none !important;
+}
+
+
+
+
+.modal-cams {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    inset:  0;
+    background-color: rgba(0, 0, 0, 0.94);
+}
+
+.close-modal { 
+    color: white;
+    font-size: 2rem;
+    width: 80%;
+    text-align: right;
+}
+
+
+#cam-cozinha {
+    display: block;
+}
+
+
+.video-cam {
+    width: 80%;
+}
+
+.video-cam video {
+    width: 100%;
+}
+
+
+aside {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 7rem;
+    left: 0;
+    background-color: var(--secondary-color);
+    height: calc(100vh - 7rem);
+    justify-content: space-between;
+    padding: 1.6rem 1.6rem ;
+}
+
+.container-options {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.option-aside {
+    display: flex;
+    gap: .8rem;
+    font-size: 2rem;
+}
+
+
+
+
+header {
+    width: 100%;
+    height: 7rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+
+header > i{
+    color: white;
+    font-size: 3.2rem;
+}
+
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div img {
+    height: 6rem;
+}
+
+
+
+
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.6rem 1.6rem;
+
+}
+
+section h1 {
+    margin-top: 4rem;
+    text-align: left;
+    width: 100%;
+}
+
+
+.container-cams {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    margin-top: 5rem;
+}
+
+
+.cam {
+    padding: 4rem;
+    display: grid;
+    justify-content: center;
+    width: 40%;
+    background-color: var(--secondary-color);
+    gap: 1.6rem;
+    border-radius: .6rem;
+}
+
+.cam i {
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+form {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+}
+
+
+
+form  textarea{
+    width: 90%;
+    height: 20rem;
+    font-family: "roboto";
+    padding: .8rem;
+    font-size: 2rem;
+}
+
+
+form button {
+    width: 90%;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    border-radius: .6rem;
+}
+
+
+
+footer {
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+.alert i {
+    font-size: 6rem;
+}
+
+.alert {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+
+
+@media(min-width:900px) {
+    .alert {
+        display: flex;
+    }
+    main{
+        display: none;
+    }
+}
